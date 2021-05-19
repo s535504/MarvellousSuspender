@@ -233,24 +233,26 @@ body.img-preview-mode .gsTopBar {
 }
 
 /* dark theme for night lurkers */
-.dark,
-.dark .gsTopBar,
-.dark .suspendedMsg {
-    background: #222;
-}
-.dark .suspendedMsg img {
-    filter: brightness(150%);
-}
-.dark .gsTopBar,
-.dark .gsTopBarTitle,
-.dark .gsTopBar a,
-.dark .suspendedMsg,
-.dark .watermark {
-    color: #b8b8b8;
-}
-.dark #setKeyboardShortcut {
-    text-decoration: underline;
-    color: #b8b8b8;
+@media (prefers-color-scheme: dark) {
+    .dark,
+    .dark .gsTopBar,
+    .dark .suspendedMsg {
+        background: #222;
+    }
+    .dark .suspendedMsg img {
+        filter: brightness(150%);
+    }
+    .dark .gsTopBar,
+    .dark .gsTopBarTitle,
+    .dark .gsTopBar a,
+    .dark .suspendedMsg,
+    .dark .watermark {
+        color: #b8b8b8;
+    }
+    .dark #setKeyboardShortcut {
+        text-decoration: underline;
+        color: #b8b8b8;
+    }
 }
 
 /* end suspended tab styles */
